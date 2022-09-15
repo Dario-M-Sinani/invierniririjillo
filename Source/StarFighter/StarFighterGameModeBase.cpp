@@ -23,11 +23,25 @@ void AStarFighterGameModeBase::BeginPlay()
 	Super::BeginPlay();
 
 	//auto ne = SpawnNave<ANaveTerrestreEnemiga01>();
+	numcapsulas = 0;
+	/*
+	if (numcapsulas <= 10)
+	{
+		numcapsulas = numcapsulas + 1;
+	}*/
 
-
-	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 08.0f, true, 3.0f);//cada cierto tiempo creamos una NaveAcuatica extra en el mapa con el SpawnNave
-
-	//GetWorldTimerManager().SetTimer(AcuaticaTimerHandle1, this, &AStarFighterGameModeBase::SpawnCapsulasArmas, 02.0f, true, 1.0f);
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 02.0f, false, 3.0f); //cada cierto tiempo creamos una capsula extra en el mapa con el SpawnCapsula
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 04.0f, false, 3.0f);
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 06.0f, false, 3.0f);
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 08.0f, false, 3.0f);
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 10.0f, false, 3.0f);
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 12.0f, false, 3.0f);
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 14.0f, false, 3.0f);
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 16.0f, false, 3.0f);
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 18.0f, false, 3.0f);
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle, this, &AStarFighterGameModeBase::SpawnCapsulas, 20.0f, false, 3.0f);
+	
+	GetWorldTimerManager().SetTimer(AcuaticaTimerHandle1, this, &AStarFighterGameModeBase::SpawnNave, 60.0f, true, 1.0f);
 
 
 	//SpawnNave();
@@ -217,5 +231,9 @@ void AStarFighterGameModeBase::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	SpawnCapsulasArmas();
+	//for (int i = 0; i >= 10; i++)
+	//{}
+	
+	
 }
 

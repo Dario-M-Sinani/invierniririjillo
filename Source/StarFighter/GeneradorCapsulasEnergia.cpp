@@ -10,7 +10,7 @@ ACapsula* AGeneradorCapsulasEnergia::FabricarCapsula(FString NombreTipoCapsula)
 		UWorld* const World = GetWorld();
 
 
-		float PejeC = rand() % 700 - 500;
+		float PejeC = rand() % 800 - 400;
 
 
 		//World->SpawnActor<ACapsulaArma1>(FVector(900, PejeC, 112.0f), FRotator::ZeroRotator);

@@ -52,10 +52,10 @@ ANaveAereaJugador::ANaveAereaJugador()
 	EfectoCapsula = 0;
 
 
-	NaveInfo.Add("Vida", 100); //iniciamos con un dato de vida en 100
-	Vida = 100;//mi valor de vida sera 100
-	Energia1 = 100; //valor energia
-
+	NaveInfo.Add("Vida", 1000); //iniciamos con un dato de vida en 1000 
+	Vida = 1000;//mi valor de vida sera 1000
+	Energia1 = 100; //valor energia 
+	Escudo_energia = 10; //inciamos el escudo
 	NaveInfo.Add("velocidad", 1000);
 	NaveInfo.Add("Energia", 100);
 }

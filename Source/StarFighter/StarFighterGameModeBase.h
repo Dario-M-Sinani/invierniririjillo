@@ -31,6 +31,7 @@ protected:
 	float PejeX;
 	float PejeY;
 	float contador;
+	float numcapsulas;
 	FTimerHandle AcuaticaTimerHandle;
 	FTimerHandle AcuaticaTimerHandle1;
 public:

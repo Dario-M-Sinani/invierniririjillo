@@ -29,7 +29,7 @@ void ANaveAcuatica::BeginPlay()
 	Super::BeginPlay();
 
 	
-	GetWorldTimerManager().SetTimer(MemberTimerHandle, this, &ANaveAcuatica::FireAcuatica, 01.0f, true, 0.0f);//hara la funcion de disparo cada tiempo determinado.
+	GetWorldTimerManager().SetTimer(MemberTimerHandle, this, &ANaveAcuatica::FireAcuatica, 05.0f, true, 0.0f);//hara la funcion de disparo cada tiempo determinado.
 
 	
 	GetWorldTimerManager().SetTimer(MemberTimerHandle1, this, &ANaveAcuatica::MuestraCuentaBalas, 60.0f, true, 60);//mostrara los disparos en 60 segundos

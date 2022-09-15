@@ -95,6 +95,7 @@ private:
 
 	float Vida; //vida usada para la nave jugador
 	float Energia1; //para la energia de la nave
+	float Escudo_energia; //escudo que se genera al consumir capsula energia
 
 	uint32 bCanFire : 1;
 
